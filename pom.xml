@@ -18,16 +18,4 @@
   <build>
     <finalName>jenkins-git-integration</finalName>
   </build>
-  <distributionManagement>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://104.198.69.13:8081/#browse/browse:santhoshmavenrepo</url>
-   </snapshotRepository>
-</distributionManagement>
-   <configuration>
-      <serverId>nexus</serverId>
-      <nexusUrl>http://104.198.69.13:8081/</nexusUrl>
-      <skipStaging>true</skipStaging>
-   </configuration>
-</plugin>
 </project>
