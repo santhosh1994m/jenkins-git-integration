@@ -20,8 +20,8 @@
   </build>
   <distributionManagement>
   <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://104.198.69.13:8081/nexus/content/repositories/snapshots</url>
+    <id>santhoshhello</id>
+    <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello</url>
   </snapshotRepository>
-</distributionManagement> 
+</distributionManagement>
 </project>
