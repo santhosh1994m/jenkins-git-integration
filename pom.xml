@@ -16,12 +16,29 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>jenkins-git-integration</finalName>
+     <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>com.mycompany.app.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
   <distributionManagement>
-  <snapshotRepository>
-    <id>santhoshhello</id>
-    <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello</url>
-  </snapshotRepository>
-</distributionManagement>
+  <repository>
+   <id>santhoshhello</id>
+   <name>santhoshhello</name>
+   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
+  </repository>
+ </distributionManagement>
 </project>
